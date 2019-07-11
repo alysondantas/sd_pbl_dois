@@ -1,0 +1,61 @@
+|TX_Placa
+D_OUT <= uart_tx:inst.data_out
+CLK => uart_tx:inst.clock
+ENABLE => uart_tx:inst.enable
+DONE <= uart_tx:inst.done
+
+
+|TX_Placa|uart_tx:inst
+clock => clock_gen.CLK
+clock => aux_cont[0].CLK
+clock => aux_cont[1].CLK
+clock => aux_cont[2].CLK
+clock => aux_cont[3].CLK
+clock => aux_cont[4].CLK
+clock => aux_cont[5].CLK
+clock => aux_cont[6].CLK
+clock => aux_cont[7].CLK
+enable => Selector2.IN3
+enable => aux_data.OUTPUTSELECT
+enable => aux_data.OUTPUTSELECT
+enable => aux_data.OUTPUTSELECT
+enable => aux_data.OUTPUTSELECT
+enable => aux_data.OUTPUTSELECT
+enable => aux_data.OUTPUTSELECT
+enable => aux_data.OUTPUTSELECT
+enable => aux_data.OUTPUTSELECT
+enable => STATE.DATAB
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => STATE.OUTPUTSELECT
+reset => aux_data[1].ENA
+reset => aux_data[0].ENA
+reset => aux_data[2].ENA
+reset => aux_data[3].ENA
+reset => aux_data[4].ENA
+reset => aux_data[5].ENA
+reset => aux_data[6].ENA
+reset => aux_data[7].ENA
+reset => done~reg0.ENA
+reset => data_out~reg0.ENA
+clk_conf => ~NO_FANOUT~
+data_in[0] => aux_data.DATAB
+data_in[1] => aux_data.DATAB
+data_in[2] => aux_data.DATAB
+data_in[3] => aux_data.DATAB
+data_in[4] => aux_data.DATAB
+data_in[5] => aux_data.DATAB
+data_in[6] => aux_data.DATAB
+data_in[7] => aux_data.DATAB
+data_out <= data_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+done <= done~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
