@@ -1,14 +1,9 @@
 
-State Machine - |TX_Placa|uart_tx:inst|STATE
-Name STATE.STATE_10 STATE.STATE_9 STATE.STATE_8 STATE.STATE_7 STATE.STATE_6 STATE.STATE_5 STATE.STATE_4 STATE.STATE_3 STATE.STATE_2 STATE.STATE_1 STATE.STATE_0 
-STATE.STATE_0 0 0 0 0 0 0 0 0 0 0 0 
-STATE.STATE_1 0 0 0 0 0 0 0 0 0 1 1 
-STATE.STATE_2 0 0 0 0 0 0 0 0 1 0 1 
-STATE.STATE_3 0 0 0 0 0 0 0 1 0 0 1 
-STATE.STATE_4 0 0 0 0 0 0 1 0 0 0 1 
-STATE.STATE_5 0 0 0 0 0 1 0 0 0 0 1 
-STATE.STATE_6 0 0 0 0 1 0 0 0 0 0 1 
-STATE.STATE_7 0 0 0 1 0 0 0 0 0 0 1 
-STATE.STATE_8 0 0 1 0 0 0 0 0 0 0 1 
-STATE.STATE_9 0 1 0 0 0 0 0 0 0 0 1 
-STATE.STATE_10 1 0 0 0 0 0 0 0 0 0 1 
+State Machine - |cpu|cpu_nios2_qsys_0:nios2_qsys_0|cpu_nios2_qsys_0_nios2_oci:the_cpu_nios2_qsys_0_nios2_oci|cpu_nios2_qsys_0_jtag_debug_module_wrapper:the_cpu_nios2_qsys_0_jtag_debug_module_wrapper|cpu_nios2_qsys_0_jtag_debug_module_tck:the_cpu_nios2_qsys_0_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
